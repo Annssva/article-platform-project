@@ -40,3 +40,15 @@ describe("classnames", () => {
     ).toBe(expected);
   });
 });
+
+console.log("1");
+let a = 5;
+console.log(5 + a);
+setTimeout(() => {
+  console.log("2");
+}, 1000);
+
+new Promise((resolve) => {
+  console.log("3");
+}).then(() => console.log("4"));
+console.log("5");
