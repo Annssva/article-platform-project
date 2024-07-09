@@ -1,4 +1,4 @@
-import exp from "constants";
+import exp from 'constants';
 
 export type BuildMode = 'production' | 'development';
 
