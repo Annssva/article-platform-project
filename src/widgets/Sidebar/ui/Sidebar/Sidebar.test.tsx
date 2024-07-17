@@ -1,5 +1,5 @@
 import { Sidebar } from "widgets/Sidebar/ui/Sidebar/Sidebar";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, screen } from "@testing-library/react";
 import { renderWithTranslation } from "shared/lib/tests/renderWithTranslation/renderWithTranslation";
 
 describe("Sidebar", () => {
