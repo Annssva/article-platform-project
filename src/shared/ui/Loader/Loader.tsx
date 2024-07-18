@@ -5,11 +5,9 @@ interface LoaderProps {
   classname?: string;
 }
 
-export const Loader = ({ classname }: LoaderProps) => {
-  return (
-    <div className={classnames('lds-ripple', {}, [classname])}>
-      <div></div>
-      <div></div>
-    </div>
-  );
-};
+export const Loader = ({ classname }: LoaderProps) => (
+  <div className={classnames('lds-ripple', {}, [classname])}>
+    <div />
+    <div />
+  </div>
+);
