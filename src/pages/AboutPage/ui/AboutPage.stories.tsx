@@ -13,7 +13,8 @@ export default {
   },
 } as ComponentMeta<typeof AboutPage>;
 
-const Template: ComponentStory<typeof AboutPage> = args => (
+// prettier-ignore
+const Template: ComponentStory<typeof AboutPage> = (args) => (
   <AboutPage {...args} />
 );
 

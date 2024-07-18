@@ -1,9 +1,10 @@
 type Mods = Record<string, boolean | string>;
 
+// prettier-ignore
 export function classnames(
   mainClass: string,
   mods: Mods = {},
-  additional: string[] = []
+  additional: string[] = [],
 ): string {
   return [
     mainClass,

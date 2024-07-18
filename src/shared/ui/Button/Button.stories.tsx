@@ -1,8 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-
-import { Button, ThemeButton } from './Button';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { Button, ThemeButton } from './Button';
 import { Theme } from 'app/providers/ThemeProvider';
 
 export default {
@@ -13,7 +12,8 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = args => <Button {...args} />;
+// prettier-ignore
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = { children: 'Text' };

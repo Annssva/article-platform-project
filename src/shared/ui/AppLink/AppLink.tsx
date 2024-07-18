@@ -13,7 +13,8 @@ interface AppLinkProps extends LinkProps {
   theme?: AppLinkTheme;
 }
 
-export const AppLink: FC<AppLinkProps> = props => {
+// prettier-ignore
+export const AppLink: FC<AppLinkProps> = (props) => {
   const {
     to,
     classname,

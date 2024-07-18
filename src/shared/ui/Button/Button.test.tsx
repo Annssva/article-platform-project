@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
-
+import { describe } from '@jest/globals';
 describe('Button', () => {
   test('test renser', () => {
     render(<Button> TEST </Button>);
