@@ -1,5 +1,7 @@
+/* eslint-disable no-undef */
 import { Sidebar } from 'widgets/Sidebar/ui/Sidebar/Sidebar';
 import { fireEvent, screen } from '@testing-library/react';
+// eslint-disable-next-line max-len
 import { renderWithTranslation } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation';
 
 describe('Sidebar', () => {
