@@ -13,16 +13,16 @@ export const Sidebar = ({ classname }: SidebarProps) => {
   const { t } = useTranslation('main');
   const [collapsed, setCollapsed] = useState(false);
   const onToggle = () => {
-    setCollapsed(prev => !prev);
+    setCollapsed((prev) => !prev);
   };
   return (
     <div
-      data-testid='sidebar'
+      data-testid="sidebar"
       className={classnames(styles.Sidebar, { [styles.collapsed]: collapsed }, [
         classname,
       ])}
     >
-      <button data-testid='sidebar-toggle' onClick={onToggle} type='button'>
+      <button data-testid="sidebar-toggle" onClick={onToggle} type="button">
         {t('Переключатель')}
       </button>
       <div className={styles.switchers}>
