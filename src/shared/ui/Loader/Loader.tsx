@@ -1,5 +1,5 @@
-import { classnames } from "shared/lib/classnames/classnames";
-import "./Loader.scss";
+import { classnames } from 'shared/lib/classnames/classnames';
+import './Loader.scss';
 
 interface LoaderProps {
   classname?: string;
@@ -7,7 +7,7 @@ interface LoaderProps {
 
 export const Loader = ({ classname }: LoaderProps) => {
   return (
-    <div className={classnames("lds-ripple", {}, [classname])}>
+    <div className={classnames('lds-ripple', {}, [classname])}>
       <div></div>
       <div></div>
     </div>
