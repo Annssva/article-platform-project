@@ -8,7 +8,8 @@ export const BugButton = () => {
   const { t } = useTranslation();
   const [error, setError] = useState(false);
   const handleBugButton = () => {
-    setError(prev => !prev);
+    // prettier-ignore
+    setError((prev) => !prev);
   };
 
   useEffect(() => {

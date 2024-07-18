@@ -4,5 +4,7 @@
   "semi": true,
   "arrowParens": "avoid",
   "useTabs": false,
-  "jsxSingleQuote": true
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "printWidth": 100
 }

@@ -5,8 +5,8 @@ import {
   ThemeContext,
 } from 'app/providers/ThemeProvider/lib/ThemeContext';
 
-const defaultTheme =
-  (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
+// prettier-ignore
+const defaultTheme = (localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme) || Theme.LIGHT;
 const ThemeProvider: FC = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(defaultTheme);
 
@@ -15,14 +15,10 @@ const ThemeProvider: FC = ({ children }) => {
       theme,
       setTheme,
     }),
-    [theme]
+    [theme],
   );
 
-  return (
-    <ThemeContext.Provider value={defaultProps}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={defaultProps}>{children}</ThemeContext.Provider>;
 };
 
 export default ThemeProvider;
