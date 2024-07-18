@@ -13,7 +13,7 @@ export default {
   },
 } as ComponentMeta<typeof PageError>;
 
-const Template: ComponentStory<typeof PageError> = args => (
+const Template: ComponentStory<typeof PageError> = (args) => (
   <PageError {...args} />
 );
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
@@ -13,7 +14,8 @@ export default {
   },
 } as ComponentMeta<typeof Sidebar>;
 
-const Template: ComponentStory<typeof Sidebar> = args => <Sidebar {...args} />;
+const Template: ComponentStory<typeof Sidebar> = (args) =>
+  <Sidebar {...args} />;
 
 export const Light = Template.bind({});
 Light.args = {};
