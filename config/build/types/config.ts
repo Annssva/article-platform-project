@@ -1,5 +1,3 @@
-import exp from 'constants';
-
 export type BuildMode = 'production' | 'development';
 
 export interface BuildPaths {
